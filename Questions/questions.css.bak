@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+* {
+	margin:0;
+	padding:0;
+}
+
+/* Adapted from https://stackoverflow.com/questions/41577942/bodybefore-with-media-query-meaning-in-css(Bedo, 10/01/2017) */
+body:before {
+	font-family: 'Overpass', sans-serif;
+	font-size: 18px;
+	content:"";
+	position: fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1; 
+	background: #002966;
+	background: linear-gradient(to bottom, #33ccff, #002966);
+}
+
+.nav{
+	height: 30px;	
+}
+
+.nav a{
+	colour: #ff6600;
+	text-decoration: none;
+	font-size: 22px;
+	margin-right: 20px;
+}
+
+.nav ul{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.nav ul li{
+	display: flex;
+	margin-left: 150px;
+}
+
+.container{
+	max-width: 700px;
+}
+
+.header{
+	background-color: #e65c00;
+	color: #ffffff;
+	min-height: 90px;
+	padding: 10px;
+}
+
+.header.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #ffa31a;
+}
+
+.header img {
+	float: left;
+	width: 110px;
+	height: 90px;
+}
+
+.header h1 {
+	font-weight: bold;
+	position: relative;
+	top: 25px;
+	left: 450px;
+}
+
+.quiz-container {
+    position: relative;
+    width: 100%;
+    margin: 30px auto;
+    height: 350px;
+}
+
+.question{
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+    font-size: 35px;
+	font-weight: bold;
+    margin-top: 90px;
+    color: #ffffcc;
+	width: 100%;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	font-size: 25px;
+    margin-top: 50px;
+    color: #ffffcc;
+}
+
+.slide{
+	position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active-slide{
+    opacity: 1;
+    z-index: 2;
+}
+
+button{
+    font-size: 20px;
+    background-color: #e65c00;
+    color: #ffffcc;
+    border: 0px;
+    padding: 20px;
+    cursor: pointer;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+button:hover{
+	background-color: #ff944d;
+}
+
+button:active {
+	background-color: #ff944d;
+	transform: translateY(4px);
+}
+
+#results {
+    font-size: 25px;
+    color: #ffffcc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+label {
+    position: relative;
+    font-size: 25px;
+    width: 18%;
+}
+
+/* Adapted from https://stackoverflow.com/questions/27671709/position-buttons-next-to-each-other-in-the-center-of-page (Prashanth VG, 30/08/2016)*/
+
+.center {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 40%;
+  left: 42%;
+}

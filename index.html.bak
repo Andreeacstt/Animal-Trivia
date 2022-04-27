@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="main.css">
+		<link href='https://fonts.googleapis.com/css2?family=Overpass' rel='stylesheet'>
+		<title>Animal Trivia</title>
+          
+	</head>
+	<body>
+	
+	<!-- Adapted from https://www.w3schools.com/tags/tag_nav.asp -->
+	<nav class="nav">
+		<ul>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a href="Author.html">Author</a></li>
+		</ul>
+	</nav>
+		
+	<!-- Adapted from https://www.w3schools.com/w3css/w3css_containers.asp -->
+	<header class="header">
+		<div class="container">
+			<img src="Images/logo.png" alt="logo" />
+			<div>
+				<h1>Animal Trivia Quiz</h1>
+			</div>	
+		</div>	
+	</header>
+	<p><br><br><br><br></p>
+	
+		<main>
+		
+			<h2>Wild animal trivia</h2>
+				<br>
+				<p>Answer 10 fun questions about animals and see how high you can score.  
+				<br>Navigate through questions via bottom buttons.
+				<br>Press the button below to start the quiz</p>
+				
+				<!-- Adapted from https://www.w3schools.com/tags/tag_img.asp -->
+				<div class="image1">
+				<img src="Images/elephant.png" alt="Elephant">
+				</div>
+				<div class="image2">
+				<img src="Images/lion.png" alt="Lion">
+				</div>
+				<div class="image3">
+				<img src="Images/monkey.png" alt="Monkey">
+				</div>
+				<div class="image4">
+				<img src="Images/hippopotamus.png" alt="Hippopotamus">
+				</div>
+				
+	<p><br><br><br></p>
+	
+		<!-- Adapted from https://www.w3schools.com/bootstrap/bootstrap_buttons.asp -->
+		<a href= "Questions/Questions.html" class="button">Take the quiz</a>
+		
+		</main>
+
+	</body>
+
+</html>	

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../main.css">
+		<link rel="stylesheet" href="questions.css">
+		<link href='https://fonts.googleapis.com/css2?family=Overpass' rel='stylesheet'>
+		<title>Animal Trivia</title>
+          
+	</head>
+	<body
+	
+	<!-- Adapted from https://www.w3schools.com/tags/tag_nav.asp -->
+	<nav class="nav">
+		<ul>
+			<li><a href="../About.html">About</a></li>
+			<li><a href="../Contact.html">Contact</a></li>
+			<li><a href="../Author.html">Author</a></li>
+			<li><a href="../Index.html">Home</a></li>
+		</ul>
+	</nav>
+	
+	<!-- Adapted from https://www.w3schools.com/w3css/w3css_containers.asp -->
+	<header class="header">
+		<div class="container">
+		<img src="../Images/logo.png" alt="logo" />
+			<div>
+				<h1>Animal Trivia Questions</h1>
+			</div>	
+		</div>	
+	</header>
+	
+	<div class="quiz-container">
+        <div id="quiz"></div>
+	</div>
+	
+		<!-- Adapted from https://www.dofactory.com/html/button/id -->
+		<div class="center">
+		<button id="previous">Previous</button>
+		<button id="next">Next</button>
+		<button id="submit">Submit</button>
+		<button id="replay">Play again</button>
+		</div>
+		<div id="results"></div>
+	<script src ="../main.js"></script>	
+	
+</body>
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+* {
+	margin:0;
+	padding:0;
+}
+
+/* Adapted from https://stackoverflow.com/questions/41577942/bodybefore-with-media-query-meaning-in-css(Bedo, 10/01/2017) */
+body:before {
+	font-family: 'Overpass', sans-serif;
+	font-size: 18px;
+	content:"";
+	position: fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1; 
+	background: #002966;
+	background: linear-gradient(to bottom, #33ccff, #002966);
+}
+
+.nav{
+	height: 30px;	
+}
+
+.nav a{
+	color: #ff6600;
+	text-decoration: none;
+	font-size: 22px;
+	margin-right: 20px;
+}
+
+.nav ul{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.nav ul li{
+	display: flex;
+	margin-left: 150px;
+}
+
+.container{
+	max-width: 700px;
+}
+
+.header{
+	background-color: #e65c00;
+	color: #ffffff;
+	min-height: 90px;
+	padding: 10px;
+}
+
+.header.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #e65c00;
+}
+
+.header img {
+	float: left;
+	width: 110px;
+	height: 90px;
+}
+
+.header h1 {
+	font-weight: bold;
+	position: relative;
+	top: 25px;
+	left: 500px;
+}
+
+h2 {
+	font-size: 30px;
+	color: #ffffff;	
+}
+
+p {
+	font-size: 23px;
+	color: #ffffff;
+}
+	
+/* Adapted from https://www.w3schools.com/css/css3_buttons.asp */
+.button {
+	padding:20px 40px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #e65c00;
+	border-style: none;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #ff944d;
+}
+
+.button:active { 
+	background-color: #ff944d;
+	transform: translateY(4px);
+}
+
+/* Adapted from https://www.codegrepper.com/code-examples/css/how+to+move+an+image+up+in+html (Vivacious Vole, 17/05/2020) */
+.image1 img {
+	position: absolute; 
+	top: 180px;
+	left: 700px;
+	width: 300px;
+	height: 200px;
+}
+
+.image2 img {
+	position: absolute; 
+	top: 420px;
+	left: 530px;
+	width: 330px;
+	height: 200px;
+}
+
+.image3 img {
+	position: absolute; 
+	top: 180px;
+	left: 1200px;
+	width: 300px;
+	height: 200px;
+}
+
+.image4 img {
+	position: absolute; 
+	top: 420px;
+	left: 1050px;
+	width: 330px;
+	height: 200px;
+}
